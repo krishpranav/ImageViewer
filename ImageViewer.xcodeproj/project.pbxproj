@@ -12,6 +12,7 @@
 		7775F5D029B8D10500A033B6 /* ImageViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7775F5CF29B8D10500A033B6 /* ImageViewerTests.swift */; };
 		7775F5D129B8D10500A033B6 /* ImageViewer.h in Headers */ = {isa = PBXBuildFile; fileRef = 7775F5C329B8D10400A033B6 /* ImageViewer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7775F5DB29B8D12E00A033B6 /* ImageViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7775F5DA29B8D12E00A033B6 /* ImageViewer.swift */; };
+		7775F5DD29B8D22700A033B6 /* ImageViewerRemote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7775F5DC29B8D22700A033B6 /* ImageViewerRemote.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +32,7 @@
 		7775F5CA29B8D10500A033B6 /* ImageViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7775F5CF29B8D10500A033B6 /* ImageViewerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewerTests.swift; sourceTree = "<group>"; };
 		7775F5DA29B8D12E00A033B6 /* ImageViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewer.swift; sourceTree = "<group>"; };
+		7775F5DC29B8D22700A033B6 /* ImageViewerRemote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewerRemote.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 				7775F5C329B8D10400A033B6 /* ImageViewer.h */,
 				7775F5C429B8D10400A033B6 /* ImageViewer.docc */,
 				7775F5DA29B8D12E00A033B6 /* ImageViewer.swift */,
+				7775F5DC29B8D22700A033B6 /* ImageViewerRemote.swift */,
 			);
 			path = ImageViewer;
 			sourceTree = "<group>";
@@ -165,6 +168,9 @@
 				Base,
 			);
 			mainGroup = 7775F5B629B8D10400A033B6;
+			packageReferences = (
+				7775F5DE29B8D2C100A033B6 /* XCRemoteSwiftPackageReference "url-image" */,
+			);
 			productRefGroup = 7775F5C129B8D10400A033B6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -199,6 +205,7 @@
 			files = (
 				7775F5C529B8D10400A033B6 /* ImageViewer.docc in Sources */,
 				7775F5DB29B8D12E00A033B6 /* ImageViewer.swift in Sources */,
+				7775F5DD29B8D22700A033B6 /* ImageViewerRemote.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,6 +465,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7775F5DE29B8D2C100A033B6 /* XCRemoteSwiftPackageReference "url-image" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dmytro-anokhin/url-image.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = 7775F5B729B8D10400A033B6 /* Project object */;
 }
