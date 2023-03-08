@@ -11,6 +11,7 @@
 		7775F5CB29B8D10500A033B6 /* ImageViewer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7775F5C029B8D10400A033B6 /* ImageViewer.framework */; };
 		7775F5D029B8D10500A033B6 /* ImageViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7775F5CF29B8D10500A033B6 /* ImageViewerTests.swift */; };
 		7775F5D129B8D10500A033B6 /* ImageViewer.h in Headers */ = {isa = PBXBuildFile; fileRef = 7775F5C329B8D10400A033B6 /* ImageViewer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7775F5DB29B8D12E00A033B6 /* ImageViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7775F5DA29B8D12E00A033B6 /* ImageViewer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		7775F5C429B8D10400A033B6 /* ImageViewer.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = ImageViewer.docc; sourceTree = "<group>"; };
 		7775F5CA29B8D10500A033B6 /* ImageViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7775F5CF29B8D10500A033B6 /* ImageViewerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewerTests.swift; sourceTree = "<group>"; };
+		7775F5DA29B8D12E00A033B6 /* ImageViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				7775F5C329B8D10400A033B6 /* ImageViewer.h */,
 				7775F5C429B8D10400A033B6 /* ImageViewer.docc */,
+				7775F5DA29B8D12E00A033B6 /* ImageViewer.swift */,
 			);
 			path = ImageViewer;
 			sourceTree = "<group>";
@@ -195,6 +198,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7775F5C529B8D10400A033B6 /* ImageViewer.docc in Sources */,
+				7775F5DB29B8D12E00A033B6 /* ImageViewer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,6 +398,7 @@
 		7775F5D829B8D10500A033B6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -409,6 +414,7 @@
 		7775F5D929B8D10500A033B6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
